@@ -1,0 +1,20 @@
+{
+  "name": "english-learning-backend",
+  "version": "0.1.0",
+  "description": "Backend MVP: diagnostico adaptativo, motor de personalizacion (BKT + repeticion espaciada), y proxy seguro al avatar conversacional (Claude API).",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

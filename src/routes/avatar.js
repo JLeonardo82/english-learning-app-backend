@@ -83,6 +83,7 @@ router.post('/chat', async (req, res) => {
 
     if (!apiRes.ok) {
       const errText = await apiRes.text();
+      console.error('Error de la API de Claude:', apiRes.status, errText);
       return res.status(502).json({ error: 'Error llamando a la API de Claude.', detail: errText });
     }
 
